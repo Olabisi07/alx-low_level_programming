@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 /**
- * main- main function
+ *	main - Entry point of the program
  *
- * Return: return funtion and it ends with 0
+ *	Description: This program uses the puts function to print a message
+ *	to the console. It demonstrates a simple C program structure.
+ *
+ *	Return: Always 0 (Success)
  */
-
 int main(void)
 {
-   puts("\"Programming is like building a multilingual puzzle");
-   return (0);
+	/* The puts function prints the specified string to the console */
+	puts("\"Programming is like building a multilingual puzzle,");
+
+	return (0); /* Return 0 to indicate successful execution */
 }
+
