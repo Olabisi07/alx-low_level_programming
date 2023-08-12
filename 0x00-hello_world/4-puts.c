@@ -10,9 +10,8 @@
  */
 int main(void)
 {
-	/* The puts function prints the specified string to the console */
 	puts("\"Programming is like building a multilingual puzzle,");
 
-	return (0); /* Return 0 to indicate successful execution */
+	return (0);
 }
 
