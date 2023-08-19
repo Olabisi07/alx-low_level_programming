@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+the compiler will recognize the function that are used in this library
 #include <time.h>
 
 /**
