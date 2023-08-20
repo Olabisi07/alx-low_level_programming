@@ -1,25 +1,23 @@
-#include <stdio.h>
-
-/**
- * main - entry point of the program
- *
- * Return: indicate a successful execution
- *
-*/
-
 int main(void)
 {
-	int i, sum = 0;
+	int i, sum;
 
-	for (int i = 3; i < 1024; i++)
+	sum = 0;
+	i = 3;
+	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 		}
+		i++;
 	}
 
-	printf("%d\n", sum);
+	putchar((sum / 1000) + '0');
+	putchar((sum / 100 % 10) + '0');
+	putchar((sum / 10 % 10) + '0');
+	putchar((sum % 10) + '0');
+	putchar('\n');
 
 	return (0);
 }
