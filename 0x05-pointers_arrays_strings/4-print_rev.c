@@ -1,28 +1,18 @@
-#include <unistd.h>
+#include "holberton.h"
 
 /**
- * print_rev - this print a string in reverse followed by a new line.
- * @s: Pointer to the input string.
- *
- * Write: prints the input string in reverse order to the standard output,
- * followed by a new line.
+ * print_rev - Prints a string in reverse
+ * @s: The string to print
 */
 
 void print_rev(char *s)
 {
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-
+	int len = _strlen(s);
 	int i;
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		write(1, &s[i], 1);
+		_putchar(s[i]);
 	}
-	write(1, "\n", 1);
+	_putchar('\n');
 }
-
