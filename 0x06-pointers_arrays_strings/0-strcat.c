@@ -1,21 +1,34 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - entry point of the program
- *
- * Return: indicate a successful execution
- *
+ * _strcat - Concatenated two string
+ * @dest: input values
+ * @src: input values
+ * Return: return function
 */
 
-int main()
+char *_strcat(char *dest, char *src)
 {
-	char dest[50] = "Hello, ";
-	char src[] = "world!";
+	int i;
+	int j;
 
-	_strcat(dest, src);
+	i = 0;
 
-	printf("%s\n", dest);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
 
-	return (0);
+	j = 0;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }
 
