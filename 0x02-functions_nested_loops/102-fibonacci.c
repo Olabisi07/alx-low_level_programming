@@ -3,34 +3,29 @@
 /**
  * main - entry point of the program
  *
- * Return: indicate a successful execution
- *
+ * Return: indicate a successful return
 */
 
-int main(void) 
+int main(void)
 {
-	int n;
 	long int fibonacci[50];
 
 	fibonacci[0] = 1;
-	fibonacci[1] =2;
+	fibonacci[1] = 2;
 
-	printf("%1d, %1d, ", fibonacci[0], fibonacci[1]);
-
-	for (n = 2; n < 50; n++) 
+	for (int i = 2; i < 50; i++)
 	{
-		fibonacci[n] = fibonacci[n - 1] + fibonacci[n - 2];
-
-		if (n == 49)
-		{
-			printf("%1d\n", fibonacci[n]);
-		}
-		else
-		{
-			printf("%1d, ", fibonacci[n]);
-		}
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 	}
+
+	printf("%ld, %ld", fibonacci[0], fibonacci[1]);
+
+	for (int i = 2; i < 50; i++)
+	{
+		printf(", %ld", fibonacci[i]);
+	}
+
+	printf("\n");
 
 	return (0);
 }
-
