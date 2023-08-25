@@ -14,13 +14,13 @@ int main(void)
 	unsigned int fib2 = 2;
 	unsigned int fib_next;
 
-	printf("%u, %u", fib1, fib2);
+	printf("%lu, %lu", fib1, fib2);
 
 	for (i = 2; i < 98; i++)
 	{
 		fib_next = fib1 + fib2;
 
-		printf(", %u", fib_next);
+		printf(", %lu", fib_next);
 
 		fib1 = fib2;
 		fib2 = fib_next;
