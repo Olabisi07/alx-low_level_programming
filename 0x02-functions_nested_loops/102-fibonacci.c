@@ -9,19 +9,27 @@
 
 int main(void) 
 {
-	int num1 = 1, num2 = 2, nextTerm;
+	int n;
+	long int fibonacci[50];
 
-	printf("%d, %d", num1, num2);
+	fibonacci[0] = 1;
+	fibonacci[1] =2;
+	printf("%1d, %1d", fibonacci[0], fibonacci[1]);
 
-	for (int i = 3; i <= 50; i++) 
+	for (n = 2; n <= 50; n++) 
 	{
-		nextTerm = num1 + num2;
-		printf(", %d", nextTerm);
-		num1 = num2;
-		num2 = nextTerm;
+		fibonacci[n] = fibonacci[n - 1] + fibonacci[n - 2];
+
+		if (n == 49)
+		{
+			printf("%1d\n", fibonacci);
+		}
+		else
+		{
+			printf("%1d, ", fibonacci[n]);
+		}
 	}
 
-	printf("\n");
 	return (0);
 }
 
