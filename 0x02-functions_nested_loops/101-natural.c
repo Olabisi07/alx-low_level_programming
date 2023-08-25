@@ -10,13 +10,13 @@
 
 int main(void)
 {
-	int sum = 0;
+	int n, sum = 0;
 
-	for (int i = 3; i < 1024; i++)
+	for (n = 0; n < 1024; n++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
+		if ((n % 5 == 0) || (n % 3 == 0))
 		{
-			sum += i;
+			sum += n;
 		}
 	}
 
