@@ -10,9 +10,9 @@ int main(void)
 {
 	int i;
 
-	unsigned int fib1 = 1;
-	unsigned int fib2 = 2;
-	unsigned int fib_next;
+	long unsigned int fib1 = 1;
+	long unsigned int fib2 = 2;
+	long unsigned int fib_next;
 
 	printf("%lu, %lu", fib1, fib2);
 
